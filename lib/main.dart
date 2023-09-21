@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    'Camping del lago Oeschinen',
                       style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -71,6 +71,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Entregable 1',
       home: Scaffold(
         appBar: AppBar(
