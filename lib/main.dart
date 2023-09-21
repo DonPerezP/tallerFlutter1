@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     'Oeschinen Lake Campground',
-                    style: TextStyle(
+                      style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -46,6 +46,7 @@ class MyApp extends StatelessWidget {
     Color color = Theme.of(context).primaryColor;
 
     Widget buttonSection = Container(
+      margin: const EdgeInsets.only(top: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -73,10 +74,10 @@ class MyApp extends StatelessWidget {
       title: 'Entregable 1',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Entregable 1'),
+          title: Text('Entregable 1'),          
         ),
         body: ListView(
-          children: [
+          children: [            
             titleSection,
             textSection,
             Image.asset(
@@ -85,7 +86,7 @@ class MyApp extends StatelessWidget {
               height: 240,
               fit: BoxFit.cover,
             ),
-            buttonSection,
+            buttonSection,            
           ],
         ),
       ),
